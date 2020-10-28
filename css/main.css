@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/* 공통영역  */
+	body{
+		font-family: 'Nanum Gothic', '나눔 고딕', sans-serif;
+		font-size: 16px;
+		letter-spacing: -1px;
+		color: #444;
+		word-wrap: break-word;
+		line-height: 1;/*폰트 사이즈 16일 시 라인하이트 1은 16, 2는 32...*/
+	}
+	/* : - 가상선택자, :: - 가상요소 */
+	a:link{color: #444;}
+	a:hover{color: #444;}
+	a:visited{color: #444;}
+	a{text-decoration: none;}
+	img{border: none;}
+	/* . 클래스선택자 */
+	.clear::after{
+		content: '';
+		clear: both;
+		display: block;
+	}
+	.txt_right{
+		text-align: right !important;
+	}
+	.mt20{
+		margin-top: 20px !important;
+	}
+	.w100p{
+		width: 100% !important;
+	}
+/* //공통영역 */

@@ -5,12 +5,13 @@
 - 기존 PC용 > 태블릿용 > 모바일용 CSS작업순서를 [모바일용 > 태블릿용 > PC용] 으로 변경작업
 
 #### 20201028(수)
+- z-index : 0부터 시작, 화면에는 레이어라는 개념(포토피아)
 - CSS 스타일 적용하는 3가지 방법
     1)인라인스타일(태그 안에 style 속성 사용 (예)style="padding:10px"))
     2)HTML 파일 안에 <style>내부스타일</style>
     3)외부CSS파일 지정 (예)<link href="css파일위치"/>)
 - gitHub README.md(마크다운 언어(깃에서 쓰이는 언어))
-- meta 데이터 : 데잉터의 데이터(콘텐츠를 설명하는 데이터)
+- meta 데이터 : 데이터의 데이터(콘텐츠를 설명하는 데이터)
 - 메타 태그 중 viewport는 반응형 사이트에서 필수. 
 - 반응형사이트 화면설계서_학생용 구글ppt 다운받기(아래 구글링크):
 - https://drive.google.com/file/d/17jXgf7R2BawMt3K9eoxfnnO_8X9yClLZ/view?usp=sharing
