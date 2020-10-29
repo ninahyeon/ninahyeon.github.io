@@ -5,6 +5,8 @@
 - 기존 PC용 > 태블릿용 > 모바일용 CSS작업순서를 [모바일용 > 태블릿용 > PC용] 으로 변경작업
 
 #### 20201029(목)
+- nav태그 : html5에 추가된 태그.
+- ul(unorder list)태그 > li(list)태그
 - 네이밍 규칠 : 카멜표기(낙타등표기법 단어+단어 시 두 번째 단어부터   대문자로 작성 ex).closePop)
 - 사각형 영역 크기 : box-sizing: border-box;
 - 햄버거메뉴 : .openMOgnb -> gnb(Global Navigation Bar)
