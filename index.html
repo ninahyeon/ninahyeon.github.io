@@ -18,10 +18,37 @@
 <style>
 /* 모바일영역 */
 
-
+/* 퀵메뉴 영역 */
+.to_top{
+	position: fixed;
+	right: 20px;
+	bottom: 100px;
+	text-align: center;
+	background: none;
+	z-index: 100;
+}
+.to_top a{
+	display: block;
+	width: 45px;
+	height: 45px;
+	border-left: none;
+	border-bottom: none;
+	background: url(./img/ico_totop_mo.png) no-repeat center;
+	background-size: 45px;
+	box-sizing: border-box;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+/* //퀵메뉴 영역 */
 
 /* //모바일영역 */
 </style>
+<script>
+	// 상단으로 바로 가기 버튼 클릭
+	$(document).ready(function() {
+		$(".to_top a").smoothScroll();
+	});
+</script>
 </head>
 <body>
 
