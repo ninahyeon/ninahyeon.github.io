@@ -17,12 +17,54 @@
 <script src="js/jquery.easing.js"></script>	
 <!-- //슬라이드용 --> 
 <style>
+@media all and (min-width:801px) {
 /* 태블릿영역 */
+/* 컨테이너영역 */
+#container{
+	padding-bottom: 20px;
+	width: initial;
+	position: initial;
+}
+/* //컨테이너영역 */
 
+/* 슬라이드영역 */
+.main_rolling_mobile{display: none;}
+.main_rolling_pc{display: block;}
+.visualRoll{
+	position: relative;
+	width: 100%;
+}
+.viewImgList{
+	position: relative;
+	width: 100%;
+}
+ul.viewImgList li{
+	text-align: center;
+	height: 550px;
+	line-height: 550px;
+	background-size: cover;
+	width: 100%;
+	position: relative;
+	z-index: 50;
+}
+.roll_content a img{display: none;}
+li.imglist0{
+	background: url(./img/maple.jpg) no-repeat;	
+}
+li.imglist1{
+	background: url(./img/img_slidecontents02.png) no-repeat;
+}
+li.imglist2{
+	background: url(./img/img_slidecontents03.png) no-repeat;
+}
+/* //슬라이드영역 */
 /* //태블릿영역 */
+}
 </style>
+
 <script>
 </script>
+
 </head>
 <body>
 
@@ -97,7 +139,7 @@
                     <li class="imglist0">
                         <div class="roll_content">
                             <a href="javascript:;">
-                            <img src="img/img_slidecontents01.png" alt="OOOO OOOOO OOOO OOOOO, 스프링... OOOO OOOOO?"></a>
+                            <img src="./img/maple.jpg" alt="OOOO OOOOO OOOO OOOOO, 스프링... OOOO OOOOO?"></a>
                             <p class="roll_txtline">OOOO OOOOOOOOO OOOOOOOOO OOOOO</p>
                         </div>
                     </li>
