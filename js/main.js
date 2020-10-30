@@ -5,6 +5,8 @@
 	aname('김나현');	//함수호출
 	*/
 	$(document).ready(function(){
+		// 상단으로 바로 가기 버튼 클릭
+		$(".to_top a").smoothScroll();
 		//alert('콜백함수 실행');
 		$(".openMOgnb").click(function(){
 			//alrert()//디버그용
