@@ -38,23 +38,31 @@ function play_w(directw) {  //다이렉트는 좌우 슬라이드 방향
     //true, false 값을 슬라이드 Auto 변수값으로 사용.
     if(wwslidingAuto){
         clearTimeout(wwslidingAuto); //play_w 함수 실행중지.
-        wwslidingAuto = setTimeout("play_w('right')",3000);
     }
-    
+    wwslidingAuto = setTimeout("play_w('right')",3000);    
 }
 //아래부터 함수 진입(play_w 함수명 호출해서 실행)됨.
 var wwslidingAuto = setTimeout("play_w('right')",3000); //6초 후에 play_w 함수를 실행
+//es5 버전용
+// var wwrollplayhide = setTimeout(function(){     //첫화면에서 플레이버튼 숨기기(2) : 멋지게
+//     $(".rollplay").css("display","none");
+// },3000);
+//es7 버전용(람다식 = 애로우(화살표) 함수 사용)
+var wwrollplayhide = setTimeout(() =>{
+    $(".rollplay").css("display","none");
+},3000);
 
 $(document).ready(function() {
+    // $(".rollplay").css("display","none");    //첫화면에서 플레이버튼 숨기기(1) : 편하게
     $(".rollstop a").click(function() {
         $(this).parent().hide();
-        $("rollplay").css('display','inline-block');
+        $(".rollplay").css('display','inline-block');
         //하단 진행버튼을 클릭했을 때, setTimeout으로 실행시킨 함수 실행취소.
         if(wwslidingAuto) {clearTimeout(wwslidingAuto);}
     });
     $(".rollplay a").click(function() {
         $(this).parent().hide();
-        $("rollstop").css('display','inline-block');
+        $(".rollstop").css('display','inline-block');
         play_w('right');    //슬라이드 함수 실행
     });
     
