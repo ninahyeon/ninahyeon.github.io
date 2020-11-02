@@ -227,5 +227,26 @@ li.imglist2{
 }
 /* //전화상담과 최근공지사항 */
 
+/* 푸터영역 */
+footer{
+	padding: initial;
+}
+.foot_area{
+	padding-left: 20px;
+	padding-bottom: 0;
+}
+.addr{font-size: 13px; line-height: 1.4;}
+.br_line{display: initial;}
+.snslink{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: initial;
+	margin: initial;
+}
+.snslink li{margin-left: 15px;}
+.quick_list{display: none;}
+/* //푸터영역 */
+
 /* //태블릿영역 */
 }
