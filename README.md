@@ -5,6 +5,12 @@
 - 기존 PC용 > 태블릿용 > 모바일용 CSS작업순서를 [모바일용 > 태블릿용 > PC용] 으로 변경작업
 
 #### 20201102(월)
+-자바스크립트 : 조건문 안에서 아래의 내용은 동일함.
+    !ok = not ok = false = !true
+-조건 : && == and == *
+        || == or == +
+        1 && 0 == 1*0 = 0 = and 모두 만족 할 때만 true
+        1||0 == 1+0 = 1 = or 하나만 만족해도 true
 - Rest API: Representation(화면처리)
             Application Interface(앱인터페이스)
 - 원시 데이터(Raw데이터 - 공공데이터)
