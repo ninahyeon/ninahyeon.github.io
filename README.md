@@ -9,6 +9,14 @@
 
 
 #### 20201103(화)
+- 시맨틱 웹: 의미있는 태그사용 == html5 사용
+            (header, footer, aside, article, nav 등 웹문서에 의미있는 영역 지정.)
+- white-space:nowrap
+        예) 마지막 교시 입
+            니다.
+  white-space:wrap
+        예) 마지막 교시
+            입니다.
 - css 값에 대한 수정
     -> padding:40px 0 0;
              (상)(좌우)(하)
