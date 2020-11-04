@@ -263,6 +263,12 @@ input::placeholder {
 .appForm textarea::placeholder {
 	color: #999;
 }
+textarea:-ms-input-placeholder{
+	color: #999;
+}
+input:-ms-input-placeholder{
+	color: #999;
+}
 .btn_baseColor {
 	margin-top: 10px;
 }
