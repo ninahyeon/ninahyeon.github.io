@@ -197,7 +197,6 @@ input::placeholder {
 	font-size: 0px;
 }
 .pilsoo_item::before {
-	top:1px;
 	content: '*';
 	display: inline-block;
 	position: absolute;
@@ -226,7 +225,7 @@ input::placeholder {
 }
 .app_list li .tit_lbl {
 	float: none;
-	line-height: 30px;
+	line-height: 40px;
 	position: relative;
 	box-sizing: border-box;
 	padding-left: 20px;
@@ -263,10 +262,10 @@ input::placeholder {
 .appForm textarea::placeholder {
 	color: #999;
 }
-textarea:-ms-input-placeholder{
+textarea:-ms-input-placeholder {
 	color: #999;
 }
-input:-ms-input-placeholder{
+input:-ms-input-placeholder {
 	color: #999;
 }
 .btn_baseColor {

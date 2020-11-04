@@ -49,11 +49,12 @@ var wwrollplayhide = setTimeout(function(){
     $(".rollplay").css("display", "none");
 },3000);
 //es7버전용(람다식=애로우화살표함수사용)
-//윈도우 7에서 애로우함수 지원하지 않음
-/* var wwrollplayhide = setTimeout(() =>{
+//윈7 애로우(Arrow)지원안함.
+/*
+var wwrollplayhide = setTimeout(() =>{
     $(".rollplay").css("display", "none");
-},3000); */
-
+},3000);
+*/
 $(document).ready(function(){
     //$(".rollplay").css("display","none");
     $(".rollstop a").click(function() {
