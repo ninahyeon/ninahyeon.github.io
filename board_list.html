@@ -15,24 +15,21 @@
 <script src="js/main.js"></script>
 <style>
 
-
-
 </style>
 <script>
 $(document).ready(function() {
-	//라이브러리 사용 않고, 오리지널 j쿼리로 만드는 유효성검사(아래)
-	$("form[name=search_form").submit(function() {	//검색버튼을 클릭(전송)했을 때,
+	//라이브러리 사용않하고, 오리지널 j쿼리로 만드는 유효성(아래)
+	$("#search_form").submit(function(){ //검색버튼을 클릭=전송했을때.
 		var search_keyword = $("input[name=search_keyword]").val();
 		if(search_keyword == "") {
-			alert("검색어는 빈 값으로 검색할 수 없습니다!")
-			return false;	//조건이 맞으면 전송중지.
+			alert("검색어는 빈 값으로 검색할 수 없습니다.!");
+			return false;//조건이 맞으면, 전송중지.
 		}
 	});
 });
 </script>
 </head>
 <body>
-
 <!-- 헤더에서푸터까지 -->
 <div id="wrap">
 	<!-- 헤더상단메뉴영역영역 -->
@@ -217,7 +214,6 @@ $(document).ready(function() {
 		<!-- //메인본문영역 -->
 	</div>
 	<!-- //메이콘텐츠영역 -->
-	
 	<!-- 푸터메뉴및사업자정보영역 -->
 	<footer>
 		<div class="foot_area box_inner">
