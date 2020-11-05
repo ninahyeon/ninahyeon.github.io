@@ -19,11 +19,19 @@
 <script src="js/additional-methods.js"></script>
 <script>
 $(document).ready(function() {
-	$(".appForm").validate();
+	$(".appForm").validate({
+		rules: {
+			password: "required",	//name값
+			password_chk: {
+				equalTo: "#password_lbl"
+			}
+		}
+	});
 	$.extend($.validator.messages, {
 		required: "필수 항목입니다.",
 		email: "유효하지 않은 E-Mail 주소입니다.",
-		digits: "숫자만 입력 가능합니다."
+		digits: "숫자만 입력 가능합니다.",
+		equalTo: "비밀번호가 일치하지 않습니다."
 	});
 });
 </script>
