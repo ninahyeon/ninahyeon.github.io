@@ -4,6 +4,18 @@
 - 파이어폭스 개발자도구의 스타일 탭사용
 - 기존 PC용 > 태블릿용 > 모바일용 CSS작업순서를 [모바일용 > 태블릿용 > PC용] 으로 변경작업
 
+#### 20201105(목)
+- 배열 : 데이터(자료)표현방식
+    공공데이터 처리(빅데이터) : Json 데이터로 자료가 전송받고, 전송함.
+    Json(제이슨-JavaScript Object Notation)데이터구조
+                        ->  키(key 속성):밸류(value 값) >> 가공(파싱)해서 화면에 뿌려주는 방식(Rest API 방식 = 파싱처리)
+                            var bigData = [
+                              {key1:value1, key2:value2, key3:value3}
+                              {name:'하나약국', maskcnt:200, lat(위도):300, lon(경도):200},{name:'둘약국', maskcnt:200, lat(위도):300, lon(경도):200},{name:'셋약국', maskcnt:200, lat(위도):300, lon(경도):200}
+                            ];
+                            alert(bigData[0][2]); >> 200
+                            alert(bigData[1][0]); >> 둘약국
+
 #### 20201104(수)
 - input 입력태그: type[text|password|radio|checkbox]
 - 로그인 페이지, 회원가입 페이지, 마이페이지 작업예정.
@@ -14,21 +26,21 @@
 
 #### 20201103(화) 
 - 시만텍 웹: 의미있는 태그사용 == html5사용
-- header, footer, article, aside 웹문서에 의미있는 영역 지정.
-- <div id="header">...</div>
+    header, footer, article, aside 웹문서에 의미있는 영역 지정.
+    <div id="header">...</div>
 - white-space:nowrap: 예)아래
-- 마지막 교시 입
-- 니다.
-- 만약에 wrap이면(아래)
-- 마지막 교시
-- 입니다
+    마지막 교시 입
+    니다.
+    만약에 wrap이면(아래)
+    마지막 교시
+    입니다
 - css 값에 대한 수정: 값이 3개 일때 = padding:40px 0 0;
-- 40px(위), 0(좌우) , 0(아래)
+    40px(위), 0(좌우) , 0(아래)
 - vertical(수직-세로) :top, middle, bottom
 - horizontal(수평-가로): left, center, right
 - table tr(table row가로줄),
-- th(table header),
-- td(table data)
+    th(table header),
+    td(table data)
 - 유효성검사: 예전에는 자바스크립트 처리
 - 유효성검사: 현재는 html5 속성으로 처리.
 - <form>태그 속성 2가지 중요
