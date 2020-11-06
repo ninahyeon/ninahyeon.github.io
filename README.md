@@ -4,17 +4,56 @@
 - 파이어폭스 개발자도구의 스타일 탭사용
 - 기존 PC용 > 태블릿용 > 모바일용 CSS작업순서를 [모바일용 > 태블릿용 > PC용] 으로 변경작업
 
+#### 20201106(금)
+- 슬라이드 : 모바일, PC용이 분리 돼있음.(신경써서 만든 경우)
+- 슬라이드를 모바일+PC 공통으로 사용하도록 통일(대충 만든 경우)
+- 되도록 폴더를 만들 때에 영문으로 만드는 습관
+- 반응형 웹 화면(장점.모바일,태블릿,PC)
+- 단점.카메라앱X,연락처앱X
+- 안드로이드 앱 화면(단점.모바일전용)-장점.카메라앱, 연락처앱, 알림앱 사용가능
+- 와이어프레임(청사진=BluePrint): 선으로 만든 디자인 틀
+- 순서도(Flow Chart): 
+- UI디자인 핵심용어
+- *UI(User Interface): 유저인터페이스 2가지(아래)
+- *CLI(Command Line Interface) 코맨드라인인터페이스
+- *GUI(Graphic User Interface) 그래픽유저인터페이스
+- Needs(니즈) 요구사항.
+- *Context(맥락): 줄거리가 있는 내용. 축약본=목차본.
+- 페르소나(Persona) 영화(Movie) 용어. 캐릭터(배우)
+- 페르소나: 가상유저를 만들어서 사용자 요구사항 확인.
+- 브레인스토밍: 무규칙으로 생각나는데로 말하는 회의방식
+
 #### 20201105(목)
-- 배열 : 데이터(자료)표현방식(인덱스 : 순서 0부터 시작)
-    공공데이터 처리(빅데이터) : Json 데이터로 자료가 전송받고, 전송함.
-    Json(제이슨-JavaScript Object Notation)데이터구조
-                        ->  키(key 속성):밸류(value 값) >> 가공(파싱)해서 화면에 뿌려주는 방식(Rest API 방식 = 파싱처리)
-                            var bigData = [
-                              {key1:value1, key2:value2, key3:value3}
-                              {name:'하나약국', maskcnt:200, lat(위도):300, lon(경도):200},{name:'둘약국', maskcnt:200, lat(위도):300, lon(경도):200},{name:'셋약국', maskcnt:200, lat(위도):300, lon(경도):200}
-                            ];
-                            alert(bigData[0][2]); >> 200
-                            alert(bigData[1][0]); >> 둘약국
+- css : 계층 구조에서 > 의미는 
+- $("ul.large li"); ul 안쪽의 대메뉴 + 중메뉴 li태그 모두 포함. 
+- $("ul.large > li "); ul 안쪽의 대메뉴1, 대메뉴2 li태그 2개만 포함.
+- 메뉴1차, 2차 
+<ul class="large">
+    <li>대메뉴1
+        <ul class="middle">
+            <li>중메뉴1-1</li>
+            <li>중메뉴1-2</li>
+        </ul>
+    </li>
+    <li>대메뉴2
+        <ul class="middle">
+            <li>중메뉴2-1</li>
+            <li>중메뉴2-2</li>
+        </ul>
+    </li>
+</ul>
+
+- 배열: 데이터(자료) 구조(인덱스:순서0부터시작)
+- 공공데이터처리(빅데이터): Json데이터로 자료가 전송받고, 전송합니다.
+- Json(JavaScriptObjcetNotation)데이터구조(아래)
+- 키(key속성):밸류(value값) -> 가공(파싱)해서 화면에 뿌려주는 방식 (Rest API 방식 = 파싱처리)
+- {key1:value1, key2:value2, key3:value3}
+- var bigData = [
+    {name:'하나약국', maskcnt:200, lat:300, lon:200},
+    {name:'둘약국', maskcnt:100, lat:300, lon:200},
+    {name:'셋약국', maskcnt:0, lat:300, lon:200}
+];
+- 파싱하는 과정: alert(bigData[1]['name']); -> 둘약국
 
 #### 20201104(수)
 - input 입력태그: type[text|password|radio|checkbox]
@@ -26,21 +65,21 @@
 
 #### 20201103(화) 
 - 시만텍 웹: 의미있는 태그사용 == html5사용
-    header, footer, article, aside 웹문서에 의미있는 영역 지정.
-    <div id="header">...</div>
+- header, footer, article, aside 웹문서에 의미있는 영역 지정.
+- <div id="header">...</div>
 - white-space:nowrap: 예)아래
-    마지막 교시 입
-    니다.
-    만약에 wrap이면(아래)
-    마지막 교시
-    입니다
+- 마지막 교시 입
+- 니다.
+- 만약에 wrap이면(아래)
+- 마지막 교시
+- 입니다
 - css 값에 대한 수정: 값이 3개 일때 = padding:40px 0 0;
-    40px(위), 0(좌우) , 0(아래)
+- 40px(위), 0(좌우) , 0(아래)
 - vertical(수직-세로) :top, middle, bottom
 - horizontal(수평-가로): left, center, right
 - table tr(table row가로줄),
-    th(table header),
-    td(table data)
+- th(table header),
+- td(table data)
 - 유효성검사: 예전에는 자바스크립트 처리
 - 유효성검사: 현재는 html5 속성으로 처리.
 - <form>태그 속성 2가지 중요
@@ -127,6 +166,7 @@
 - 스크린리더 프로그램용 코딩: 예, text-indent: -9999px;
 - 햄버거메뉴: .openMOgnb -> gnb(global navigation) 글로벌 네비게이션(전체 메뉴)
 Ps. Page Navigation (페이징 링크 처리)
+
 #### 20201028(수)
 - z-index: 주), 0부터 시작 , 화면에는 레이어라는 개념으로 처리(포토피아)
 - CSS스타일 적용하는 3가지 방법

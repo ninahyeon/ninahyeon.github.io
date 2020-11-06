@@ -91,88 +91,11 @@
     position: inherit;
   }
   /* //컨테이너영역 */
-  /* 슬라이드영역 */
-  .main_rolling_mobile {
-    display: none;
-  }
-  .main_rolling_pc {
-    display: block;
-  }
-  .visualRoll {
-    position: relative;
-    width: 100%;
-  }
-  .viewImgList {
-    position: relative;
-    width: 100%;
-  }
+  /* 모바일 + PC 공통 슬라이드 영역 */
   ul.viewImgList li {
-    text-align: center;
     height: 550px;
-    line-height: 550px;
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
   }
-  .roll_content a img {
-    display: none;
-  }
-  li.imglist0 {
-    position: relative;
-    z-index: 50;
-    background: url(../img/slide_01.jpg) no-repeat;
-  }
-  li.imglist1 {
-    position: absolute;
-    z-index: 10;
-    left: 0;
-    top: 0;
-    background: url(../img/slide_02.jpg) no-repeat;
-  }
-  li.imglist2 {
-    position: absolute;
-    z-index: 10;
-    left: 0;
-    top: 0;
-    background: url(../img/slide_03.jpg) no-repeat;
-  }
-  .roll_content {
-    position: relative;
-  }
-  .roll_content .roll_txtline {
-    position: absolute;
-    left: 0;
-    bottom: 60px;
-    width: 100%;
-    line-height: 1;
-    text-align: center;
-    font-size: 22px;
-    color: #fff;
-    letter-spacing: 2px;
-  }
-  .rollbtnArea {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 25px;
-    z-index: 200;
-  }
-  .rollingbtn {
-    width: 320px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .rollingbtn li.butt0 {
-    margin-left: 10px;
-  }
-  .rollingbtn li {
-    display: inline-block;
-    margin-left: 5px;
-  }
-  .rollingbtn li a {
-    vertical-align: top;
-  }
-  /* //슬라이드영역 */
+  /* // 모바일 + PC 공통 슬라이드 영역 */
 
   /* 겔러리 최근게시물 */
   .about_area h2 {

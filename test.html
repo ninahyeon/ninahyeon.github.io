@@ -8,7 +8,7 @@
     <script>
         // JQuery 기본구조
         $(document).ready(function(){
-            $("#addElement").click(function(){
+            /* $("#addElement").click(function(){
                 $(document.body).css("background", "yellow");
                 // $("<div><p>제이쿼리</p></div>").appendTo(this);
                 // $(타겟).append("타겟 내부 다음에 추가할 내용")
@@ -17,6 +17,9 @@
                 $(this).after("<div><p>외부추가</div></p>")
                 var count = $("div").length;
                 alert("div 태그의 개수는 " + count + "개 입니다.");
+            }); */
+            $("#addElement").bind("click",function(){
+                alert('버튼 클릭 이벤트 방식2');
             });
         });
         테스트

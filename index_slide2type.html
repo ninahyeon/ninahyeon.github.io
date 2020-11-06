@@ -13,7 +13,9 @@
 <script src="js/jquery.smooth-scroll.min.js"></script>
 <script src="js/main.js"></script>
 <!-- 슬라이드용 -->
+<link rel="stylesheet" href="css/swiper.min.css">
 <script src="js/rollmain.js"></script>
+<script src="js/jquery.easing.js"></script>	
 <!-- //슬라이드용 --> 
 <style>
 
@@ -89,7 +91,7 @@ $(document).ready(function() {
 	
 	<!-- 메인콘텐츠영역 -->
 	<div id="container">
-		<!-- //모바일+PC 공통 슬라이드영역 -->
+		<!-- //PC슬라이드영역 -->
     	<div class="main_rolling_pc">
             <div class="visualRoll">
             	<!-- 슬라이드이미지영역 -->
@@ -130,7 +132,28 @@ $(document).ready(function() {
                 <!-- //슬라이드버튼영역 -->
             </div>
         </div>
-        <!-- //모바일+PC 공통 슬라이드영역 -->
+        <!-- //PC슬라이드영역 -->
+        
+        <!-- 모바일슬라이드영역 -->
+        <div class="main_rolling_mobile">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                	<!-- 슬라이드이미지영역 -->
+                    <div class="swiper-slide">
+                        <a href="javascript:;"><img src="img/slide_01.jpg" alt="OOOO OOOOO 믿을 수 있는 스프링정보, 스프링... OOOO OOOOO?" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:;"><img src="img/slide_02.jpg" alt="OOOO OOOOO 믿을 수 있는 스프링정보, 스프링... OOOO OOOOO?" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:;"><img src="img/slide_03.jpg" alt="OOOO OOOOO 믿을 수 있는 스프링정보, 스프링... OOOO OOOOO?" /></a>
+                    </div>
+                    <!-- //슬라이드이미지영역 -->
+                </div>						
+                <div class="swiper-pagination"></div>                
+            </div>
+        </div>
+        <!-- //모바일슬라이드영역 -->
 	
 		<!-- 갤러리최근게시물영역 -->
 		<div class="about_area">
@@ -220,6 +243,21 @@ $(document).ready(function() {
 	<p class="to_top"><a href="#wrap" class="s_point">TOP</a></p>
 </div>
 <!-- //하단퀵메뉴영역 -->
+
+<!-- 슬라이드스크립트영역 -->
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript">
+   $(document).ready(function(){
+		var swiper = new Swiper('.swiper-container', {
+			loop: true,
+			autoplay:5500,
+		    autoplayDisableOnInteraction: false,
+			pagination: '.swiper-pagination',
+            paginationClickable: true
+		});
+	});
+</script>
+<!-- //슬라이드스크립트영역 -->
 
 </body>
 </html>
